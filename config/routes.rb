@@ -1,4 +1,6 @@
 Sugetoes::Application.routes.draw do
+  get "sugestoes/sugerir"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

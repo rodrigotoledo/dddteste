@@ -7,6 +7,8 @@ gem 'rails', '3.0.7'
 
 gem 'sqlite3'
 gem 'savon'
+gem 'nestful'
+gem 'hpricot'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -32,6 +34,22 @@ gem 'savon'
 # end
 
 
-group :test do
+group :test, :development do
+  gem 'rspec-rails', '~> 2.4'
+  gem 'rcov'
   gem 'mocha'
+  gem 'factory_girl_rails', '1.0'
+  
+  gem 'ZenTest'
+  gem 'sqlite3-ruby'
+  
+  gem 'xpath', '0.1.4'
+  gem 'launchy'
+  
+
+  gem 'shoulda'
+  gem 'shoulda-matchers'
+
+  gem 'webrat'
+
 end

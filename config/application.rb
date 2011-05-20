@@ -13,7 +13,7 @@ module Sugetoes
     # -- all .rb files in that directory are automatically loaded.
 
     # Custom directories with classes and modules you want to be autoloadable.
-    # config.autoload_paths += %W(#{config.root}/extras)
+    config.autoload_paths += %W(#{config.root}/lib/domain)
 
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.
@@ -40,3 +40,9 @@ module Sugetoes
     config.filter_parameters += [:password]
   end
 end
+
+
+require File.join(Rails.root,'lib','domain','sugestao')
+require File.join(Rails.root,'lib','domain','conta_a_receber')
+require File.join(Rails.root,'lib','domain','contas_service')
+require File.join(Rails.root,'lib','infrastructure','conexao')
